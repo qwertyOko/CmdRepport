@@ -22,14 +22,14 @@ namespace CmdRepport
             if (this.BackColor == System.Drawing.Color.Black)
             {
                 this.BackColor = System.Drawing.Color.White;
-                label1.ForeColor = System.Drawing.Color.Black;
+                lbl_result.ForeColor = System.Drawing.Color.Black;
                 label2.ForeColor = System.Drawing.Color.Black;
                 label3.ForeColor = System.Drawing.Color.Black;
             }
             else
             {
                 this.BackColor = System.Drawing.Color.Black;
-                label1.ForeColor = System.Drawing.Color.White;
+                lbl_result.ForeColor = System.Drawing.Color.White;
                 label2.ForeColor = System.Drawing.Color.White;
                 label3.ForeColor = System.Drawing.Color.White;
             }
