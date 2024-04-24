@@ -144,7 +144,7 @@ namespace CmdRepport
             this.Controls.Add(this.txtBox_valueFuel);
             this.Controls.Add(this.btn_count);
             this.Name = "Form1";
-            this.Text = "Honda forever";
+            this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
 
