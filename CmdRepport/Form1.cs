@@ -15,6 +15,15 @@ namespace CmdRepport
         public Form1()
         {
             InitializeComponent();
+            Panel colorPanel = new Panel();
+            colorPanel.BackColor = Color.DarkGray; // Устанавливаем цвет фона полоски
+            colorPanel.Dock = DockStyle.Top; // Занимаем верхнюю часть формы
+            colorPanel.Height = 30; // Устанавливаем высоту полоски
+            Controls.Add(colorPanel); // Добавляем полоску на форму
+                                      // Создание и настройка полоски в середине формы
+            panel2.BackColor = Color.DarkGray;
+            panel3.BackColor = Color.DarkGray;
+          
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -25,6 +34,7 @@ namespace CmdRepport
                 lbl_result.ForeColor = System.Drawing.Color.Black;
                 label2.ForeColor = System.Drawing.Color.Black;
                 label3.ForeColor = System.Drawing.Color.Black;
+                label4.ForeColor = System.Drawing.Color.Black;
             }
             else
             {
@@ -32,7 +42,11 @@ namespace CmdRepport
                 lbl_result.ForeColor = System.Drawing.Color.White;
                 label2.ForeColor = System.Drawing.Color.White;
                 label3.ForeColor = System.Drawing.Color.White;
+                label4.ForeColor = System.Drawing.Color.White;
             }
         }
-    }
+        }
+
+      
+    
 }
