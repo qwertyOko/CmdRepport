@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -118,6 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+
   <data name="btn_theme.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAOCAYAAAA1+Nx+AAAABGdBTUEAALGPC/xhBQAAA5VJREFUOE+l
@@ -232,6 +233,7 @@
   </data>
   <data name="pictureBox3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
+
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAXRJREFUWEft
         l2tqhEAQhP0bcoklp9kjSU4SyYVyARVFFPFxAcmfSMh2hZ6lZ+xRR0jIYws+ELu3qxhk6Ylu+pF6e7p/
         IBKiJd6JDx8vj3fqewF+jzmYd2ILv6jpTEyENmzBjgASzD2z1VJUPBGv3LyLwAAAIfSToMKzaNzFgQAg
@@ -240,6 +242,7 @@
         vEDWDWxpSzMw0moAAZqmCYYtbbnDpbF8liBAXddXtBOQdQNb2qKBqwuoBgJUVRWKdx9QN6I1EKAsy1C8
         G9GhnbAoilC8OyG24t0rOUCAPM9DmAj//YCGBt8Lsizby0T47wVGNBgnYW5GM4x8IECapmvMREskxPbN
         6J8pii7pnuW0uA02swAAAABJRU5ErkJggg==
+
 </value>
   </data>
 </root>
