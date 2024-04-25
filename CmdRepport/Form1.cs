@@ -17,45 +17,16 @@ namespace CmdRepport
         {
             InitializeComponent();
             Panel colorPanel = new Panel();
-            colorPanel.BackColor = Color.DarkGray; // Устанавливаем цвет фона полоски
-            colorPanel.Dock = DockStyle.Top; // Занимаем верхнюю часть формы
-            colorPanel.Height = 30; // Устанавливаем высоту полоски
-            Controls.Add(colorPanel); // Добавляем полоску на форму
-                                      // Создание и настройка полоски в середине формы
+            colorPanel.BackColor = Color.DarkGray; 
+            colorPanel.Dock = DockStyle.Top; 
+            colorPanel.Height = 30; 
+            Controls.Add(colorPanel); 
+                                      
 
-//            InitializeDatabase();
 
 
         }
-     /*   private void InitializeDatabase()
-        {
-            //string connectionString = "Data Source=YourServer;Initial Catalog=YourDatabase;Integrated Security=True";
-            //    Data Source = sql5105.site4now.net; Initial Catalog = db_aa7f65_server3; User Id = db_aa7f65_server3_admin; Password = serverOAA3; Integrated Security = True";
-
-
-            string connectionString ="Data Source=sql5105.site4now.net;Initial Catalog=db_aa7f65_server3;User Id = db_aa7f65_server3_admin; Password = serverOAA3;";
-
-
-            string createTableQuery = @"
-                CREATE TABLE IF NOT EXISTS Cars (
-                    Id INT PRIMARY KEY IDENTITY,
-                    Model NVARCHAR(100),
-                    Brand NVARCHAR(100),
-                    EngineVolume FLOAT,
-                    Consumption FLOAT
-                )";
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                using (SqlCommand command = new SqlCommand(createTableQuery, connection))
-                {
-                    connection.Open();
-                    command.ExecuteNonQuery();
-                }
-            }
-        }
-
-        */
+     
         public double CalculateFuelConsumption(double fuelValue, double distanceTraveled)
         {
             if (distanceTraveled <= 0)
@@ -133,24 +104,25 @@ namespace CmdRepport
             }
 
             string connectionString = "Data Source=sql5105.site4now.net;Initial Catalog=db_aa7f65_server3;User Id=db_aa7f65_server3_admin;Password=serverOAA3;";
-
-            string insertQuery = @"
-        INSERT INTO Cars (Model, Brand, EngineVolume, Consumption)
-        VALUES (@Model, @Brand, @EngineVolume, @Consumption)";
-
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
+                string insertQuery = @"
+        INSERT INTO Cars (Model, Brand, EngineVolume, FuelConsumption) 
+        VALUES (@Model, @Brand, @EngineVolume, @FuelConsumption)";
+
                 using (SqlCommand command = new SqlCommand(insertQuery, connection))
                 {
                     command.Parameters.AddWithValue("@Model", model);
                     command.Parameters.AddWithValue("@Brand", brand);
                     command.Parameters.AddWithValue("@EngineVolume", engineVolume);
-                    command.Parameters.AddWithValue("@Consumption", fuelConsumption);
+                    command.Parameters.AddWithValue("@FuelConsumption", fuelConsumption);
 
                     connection.Open();
                     command.ExecuteNonQuery();
                 }
             }
+
+
         }
         private void txtBox_valueFuel_TextChanged(object sender, EventArgs e)
         {
@@ -178,12 +150,11 @@ namespace CmdRepport
                 return;
             }
 
-         //   string connectionString = "Data Source=sql5105.site4now.net;Initial Catalog=db_aa7f65_server3;User Id=db_aa7f65_server3_admin;Password=serverOAA3; Integrated Security=True";
             string connectionString = "Data Source=sql5105.site4now.net;Initial Catalog=db_aa7f65_server3;User Id=db_aa7f65_server3_admin;Password=serverOAA3;";
             string selectQuery = @"
-                SELECT Consumption
-                FROM Cars
-                WHERE Model = @Model AND Brand = @Brand AND EngineVolume = @EngineVolume";
+                        SELECT Consumption
+                        FROM Cars
+                        WHERE Model = @Model AND Brand = @Brand AND EngineVolume = @EngineVolume";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -238,7 +209,9 @@ namespace CmdRepport
 
             }
         }
-        }
+
+       
+    }
 
       
     
