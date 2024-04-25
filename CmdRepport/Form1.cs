@@ -25,6 +25,7 @@ namespace CmdRepport
                 lbl_result.ForeColor = System.Drawing.Color.Black;
                 label2.ForeColor = System.Drawing.Color.Black;
                 label3.ForeColor = System.Drawing.Color.Black;
+                label6.ForeColor = System.Drawing.Color.Black;
             }
             else
             {
@@ -32,6 +33,7 @@ namespace CmdRepport
                 lbl_result.ForeColor = System.Drawing.Color.White;
                 label2.ForeColor = System.Drawing.Color.White;
                 label3.ForeColor = System.Drawing.Color.White;
+                label6.ForeColor = System.Drawing.Color.White;
             }
         }
     }
