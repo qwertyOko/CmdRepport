@@ -70,12 +70,22 @@ namespace CmdRepport
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btn_theme = new System.Windows.Forms.Button();
+
+          
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
+
             this.SuspendLayout();
             // 
             // btn_count
@@ -84,7 +94,7 @@ namespace CmdRepport
             this.btn_count.Name = "btn_count";
             this.btn_count.Size = new System.Drawing.Size(75, 23);
             this.btn_count.TabIndex = 0;
-            this.btn_count.Text = "Расчитать.";
+            this.btn_count.Text = "Расчитать";
             this.btn_count.UseVisualStyleBackColor = true;
             this.btn_count.Click += new System.EventHandler(this.btn_count_Click);
             // 
@@ -132,14 +142,49 @@ namespace CmdRepport
             // 
             // btn_theme
             // 
-            this.btn_theme.Location = new System.Drawing.Point(703, 12);
+            this.btn_theme.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_theme.BackgroundImage")));
+            this.btn_theme.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_theme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_theme.Location = new System.Drawing.Point(647, 12);
             this.btn_theme.Name = "btn_theme";
-            this.btn_theme.Size = new System.Drawing.Size(75, 23);
+            this.btn_theme.Size = new System.Drawing.Size(131, 24);
             this.btn_theme.TabIndex = 6;
             this.btn_theme.Text = "День/Ночь";
+            this.btn_theme.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_theme.UseVisualStyleBackColor = true;
             this.btn_theme.Click += new System.EventHandler(this.button2_Click);
             // 
+
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(501, 79);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(52, 53);
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.Location = new System.Drawing.Point(501, 150);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(52, 53);
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox3.Location = new System.Drawing.Point(354, 339);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(29, 23);
+            this.pictureBox3.TabIndex = 9;
+            this.pictureBox3.TabStop = false;
+
             // panel1
             // 
             this.panel1.Location = new System.Drawing.Point(272, 50);
@@ -183,11 +228,19 @@ namespace CmdRepport
             this.label4.Size = new System.Drawing.Size(110, 13);
             this.label4.TabIndex = 11;
             this.label4.Text = "Результаты растёта";
+
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
+
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
@@ -203,6 +256,10 @@ namespace CmdRepport
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
@@ -219,6 +276,10 @@ namespace CmdRepport
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btn_theme;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
