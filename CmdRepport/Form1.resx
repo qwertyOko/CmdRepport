@@ -118,7 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-
   <data name="btn_theme.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAOCAYAAAA1+Nx+AAAABGdBTUEAALGPC/xhBQAAA5VJREFUOE+l
@@ -143,7 +142,7 @@
   <data name="pictureBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
-        MAAA6mAAADqYAAAXcJy6UTwAAAAJcEhZcwAADsEAAA7BAbiRa+0AAAAHdElNRQfoBBgUEzF98KD7AAAA
+        MAAA6mAAADqYAAAXcJy6UTwAAAAJcEhZcwAADsAAAA7AAWrWiQkAAAAHdElNRQfoBBgUEzF98KD7AAAA
         GXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAABqZJREFUaEPtmntQVFUcx9kHu4Asu7DL
         wi6vBVlAlpXHsjx2BXVVSO0xU5OV44x/KGhZY2qOj7J89Ffl1DhZ/dGUU/R0KpzMskxnepqKpmiNoZUv
         SBMTUtPx8ev7u+zFBVHuPiCa2d/MZ+6Fe+/v/L73nN855549Ef6YTCaLxGElOA8OABdgc4PxQCGLiIjG
@@ -179,7 +178,7 @@
   <data name="pictureBox2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
-        MAAA6mAAADqYAAAXcJy6UTwAAAAJcEhZcwAADsEAAA7BAbiRa+0AAAAHdElNRQfoBBgUFCkh3a5qAAAA
+        MAAA6mAAADqYAAAXcJy6UTwAAAAJcEhZcwAADsAAAA7AAWrWiQkAAAAHdElNRQfoBBgUFCkh3a5qAAAA
         GXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAACytJREFUaEPNmglUVOcVx5+xrrhEG8Gj
         qaZpY2xSW2tyXJrF2KbVNir7DMO+MyAIggvuGhB30UQtaoyxRY0ajwuKYtARRdxxQRNF07hG28ae1K0q
         yu3/fu+9mffeDHEmmtDvnJ8zOOdw7s977/fd743S97Es/qHSwP6DJJOvWQoaFMSvnYMHmyaZ/UKqI0xR
@@ -233,7 +232,6 @@
   </data>
   <data name="pictureBox3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAXRJREFUWEft
         l2tqhEAQhP0bcoklp9kjSU4SyYVyARVFFPFxAcmfSMh2hZ6lZ+xRR0jIYws+ELu3qxhk6Ylu+pF6e7p/
         IBKiJd6JDx8vj3fqewF+jzmYd2ILv6jpTEyENmzBjgASzD2z1VJUPBGv3LyLwAAAIfSToMKzaNzFgQAg
@@ -242,7 +240,6 @@
         vEDWDWxpSzMw0moAAZqmCYYtbbnDpbF8liBAXddXtBOQdQNb2qKBqwuoBgJUVRWKdx9QN6I1EKAsy1C8
         G9GhnbAoilC8OyG24t0rOUCAPM9DmAj//YCGBt8Lsizby0T47wVGNBgnYW5GM4x8IECapmvMREskxPbN
         6J8pii7pnuW0uA02swAAAABJRU5ErkJggg==
-
 </value>
   </data>
 </root>

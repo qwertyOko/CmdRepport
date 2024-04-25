@@ -21,8 +21,7 @@ namespace CmdRepport
             colorPanel.Height = 30; // Устанавливаем высоту полоски
             Controls.Add(colorPanel); // Добавляем полоску на форму
                                       // Создание и настройка полоски в середине формы
-            panel2.BackColor = Color.DarkGray;
-            panel3.BackColor = Color.DarkGray;
+            
           
         }
 
