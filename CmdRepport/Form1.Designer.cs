@@ -33,6 +33,8 @@ namespace CmdRepport
         /// <param name="fuelValue">Amount of fuel refilled (in liters)</param>
         /// <param name="distanceTraveled">Distance traveled since last refill (in kilometers)</param>
         /// <returns>Fuel consumption in liters per 100 kilometers</returns>
+        /// 
+        /*
         private double CalculateFuelConsumption(double fuelValue, double distanceTraveled)
         {
             if (distanceTraveled <= 0)
@@ -40,9 +42,9 @@ namespace CmdRepport
                 return 0;
             }
             return (fuelValue / distanceTraveled) * 100;
-        }
+        }*/
 
-
+        /*
         private void btn_count_Click(object sender, EventArgs e)
         {
             double fuelValue;
@@ -59,7 +61,7 @@ namespace CmdRepport
                 this.lbl_result.Text = "Ошибка: Введите корректные значения.";
             }
         }
-
+        */
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
