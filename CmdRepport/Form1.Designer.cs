@@ -85,13 +85,6 @@ namespace CmdRepport
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lbl_fuelConsumptionFromDB = new System.Windows.Forms.Label();
-            this.lbl_fuelConsumptionFromDB.AutoSize = true;
-            this.lbl_fuelConsumptionFromDB.Location = new System.Drawing.Point(169, 425); 
-            
-            this.lbl_fuelConsumptionFromDB.Name = "lbl_fuelConsumptionFromDB";
-            this.lbl_fuelConsumptionFromDB.TabIndex = 7;
-            this.lbl_fuelConsumptionFromDB.Text = ""; 
-            this.Controls.Add(this.lbl_fuelConsumptionFromDB);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -230,7 +223,7 @@ namespace CmdRepport
             this.label7.ForeColor = System.Drawing.Color.DarkRed;
             this.label7.Location = new System.Drawing.Point(229, 10);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(178, 13);
+            this.label7.Size = new System.Drawing.Size(202, 13);
             this.label7.TabIndex = 4;
             this.label7.Text = "Можно расчитать при необходимости*";
             // 
@@ -272,9 +265,17 @@ namespace CmdRepport
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(190, 411);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(80, 13);
+            this.label6.Size = new System.Drawing.Size(53, 13);
             this.label6.TabIndex = 4;
             this.label6.Text = "Средний ";
+            // 
+            // lbl_fuelConsumptionFromDB
+            // 
+            this.lbl_fuelConsumptionFromDB.AutoSize = true;
+            this.lbl_fuelConsumptionFromDB.Location = new System.Drawing.Point(169, 425);
+            this.lbl_fuelConsumptionFromDB.Name = "lbl_fuelConsumptionFromDB";
+            this.lbl_fuelConsumptionFromDB.Size = new System.Drawing.Size(0, 13);
+            this.lbl_fuelConsumptionFromDB.TabIndex = 7;
             // 
             // Form1
             // 
@@ -283,6 +284,7 @@ namespace CmdRepport
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbl_fuelConsumptionFromDB);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox3);
@@ -297,7 +299,6 @@ namespace CmdRepport
             this.Controls.Add(this.txtBox_valueFuel);
             this.Controls.Add(this.btn_count);
             this.Controls.Add(this.panel1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Honda Forever";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

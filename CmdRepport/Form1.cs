@@ -29,19 +29,14 @@ namespace CmdRepport
 
             string connectionString = "Data Source=sql5105.site4now.net;Initial Catalog=db_aa7f65_server3;User Id=db_aa7f65_server3_admin;Password=serverOAA3;";
             fuelTripController = new FuelTripController(connectionString);
-
-
         }
-
 
         private void btn_count_Click(object sender, EventArgs e)
         {
             // Обработка нажатия кнопки для расчета расхода топлива
             fuelTripController.CheckAndDisplayFuelConsumption(txtBox_valueFuel.Text, txtBox_valueDistance.Text, textBox1.Text, textBox2.Text, textBox3.Text, lbl_result);
         }
-
-
-       
+      
         private void txtBox_valueFuel_TextChanged(object sender, EventArgs e)
         {
             // Проверка и отображение расхода топлива при изменении значения топлива
@@ -59,9 +54,7 @@ namespace CmdRepport
             // Проверка и отображение расхода топлива при изменении значения объема двигателя
             fuelTripController.CheckAndDisplayFuelConsumption(txtBox_valueFuel.Text, txtBox_valueDistance.Text, textBox1.Text, textBox2.Text, textBox3.Text, lbl_result);
         }
-
-
-       
+      
         private void button2_Click(object sender, EventArgs e)
         {
             if (this.BackColor == System.Drawing.Color.Black)
@@ -85,8 +78,6 @@ namespace CmdRepport
 
             }
         }
-
-
         /*
           private void UpdateDatabase(double fuelConsumption)
           {
@@ -101,8 +92,6 @@ namespace CmdRepport
 
               string connectionString =
                   "Data Source=sql5105.site4now.net;Initial Catalog=db_aa7f65_server3;User Id = db_aa7f65_server3_admin; Password = serverOAA3;";
-
-
 
               string insertQuery = @"
                   INSERT INTO Cars (Model, Brand, EngineVolume, Consumption)
@@ -122,10 +111,6 @@ namespace CmdRepport
                   }
               }
           }
-
           */
     }
-
-
-
 }
